@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/sbr.css">
+    <title>Sistema basados en reglas</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul class="menu__contenido">
+                <li class="menu__contenido-item"><a href="/index.html">Inicio</a></li>
+                <li class="menu__contenido-item"><a href="sbr.html">SBR</a></li>
+                <li class="menu__contenido-item"><a href="ia.html">Inteligencia Artificial</a></li>
+                <li class="menu__contenido-item"><a href="">Acerca de mi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page">
+
+        <div class="page__information">
+            <p>Antes de iniciar, podrías leer un poco acerca de la enfermadad del sistema digestivo, te podría ayudar a
+                identificar mejor las causas (en caso de tenerlas)</p><br>
+            <h3 class="page__information-h1"><u>Enfermedad del sistema digestivo</u></h3>
+            <p class="page__information-p">Las <strong> enfermedades digestivas son trastornos del aparato
+                    digestivo</strong>, que algunas veces se denomina tracto gastrointestinal (GI).
+                En la digestión, el alimento y las bebidas se descomponen en pequeñas partes (llamadas nutrientes) que
+                el cuerpo puede absorber y usar como energía y pilares fundamentales para las células.
+                El aparato digestivo está compuesto por el esófago (tubo de alimento), el estómago, los intestinos
+                grueso y delgado, el hígado, el páncreas y la vesícula biliar. <br> <br>
+                Una <strong>enfermedad digestiva</strong> es cualquier problema de salud que ocurre en el aparato
+                digestivo. Las afecciones pueden ir de leves a graves. Algunos problemas comunes incluyen acidez
+                gástrica, cáncer, síndrome del intestino irritable e intolerancia a la lactosa. <br>
+            <h3 class="page__information-h3">Enfermedades mas comunes</h3>
+            <ul class="page__information-list">
+                <li class="page__information-list_item">Enfermedad del reflujo gastroesofágico</li>
+                <li class="page__information-list_item">Enfermedad celíaca</li>
+                <li class="page__information-list_item">Enfermedad de Crohn</li>
+                <li class="page__information-list_item">Hemorroides</li>
+            </ul>
+            <h3 class="page__information-h3">Sintomas</h3>
+            <ul class="page__information-list">
+                <li class="page__information-list_item">Distensión abdominal. </li>
+                <li class="page__information-list_item">Dolor abdominal.</li>
+                <li class="page__information-list_item">Alteraciones del hábito intestinal como diarrea o estreñimiento.
+                </li>
+                <li class="page__information-list_item">Ardor estomacal, acidez o reflujo.</li>
+                <li class="page__information-list_item">Náuseas o vómitos.</li>
+            </ul>
+            <h3 class="page__information-h3">Dolores por individual</h3> <br>
+
+            <ul>
+                <li> <u><strong>Dolor abdominal:</strong></u> El dolor abdominal puede tener causas que no se deben a
+                    una enfermedad subyacente. Por ejemplo, constipación, gases, comer en exceso, estrés o distensión
+                    muscular.</li>
+                <li> <u><strong>Diarrea:</strong></u> La diarrea puede ser ocasionada por un virus o, a veces, comida
+                    contaminada.</li>
+                <li> <u><strong>Estreñimiento</strong></u> Deshidratación, falta de fibra en la dieta, inactividad
+                    física o efectos secundarios de medicamentos.</li>
+                <li> <u><strong>Acidez estomacal:</strong> </u>Comida picante, alcohol, comer demasiado o usar ropa
+                    ajustada.</li>
+                <li> <u><strong>Vómitos:</strong></u>Puede dar por la resaca, el embarazo, comer en exceso o el mareo
+                    por movimiento.</li>
+            </ul>
+            <u></u>
+        </div>
+
+        <div class="page__process">
+            <div class="page__process-content">
+                <div class="page__process-content__title">
+                    <h1>Sistema basados en reglas</h1>
+                    <p>Rellena el formulario siguiente y una vez termines, presiona el boton de "Realizar Prueba"</p>
+                </div>
+                <div class="page__process-form">
+                    <form>
+                        <div class="formulario">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="id_usuario"
+                                            placeholder="1234567890">
+                                        <label for="floatingInput">Identificación</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="respuesta_usuario"
+                                            placeholder="I'm">
+                                        <label for="floatingInput">Nombre de usuario</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="respuesta_apellido"
+                                            placeholder="Nayeon">
+                                        <label for="floatingInput">Apellido</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="respuesta_vomitos"
+                                            aria-label="Floating label select example">
+                                            <option selected disabled value="">Elige una opción</option>
+                                            <option value="Si">Si</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        <label for="floatingSelect">¿Haz vomitado esta semana?</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="respuesta_abdominal"
+                                            aria-label="Floating label select example">
+                                            <option selected disabled value="">Elige una opción</option>
+                                            <option value="Si">Si</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        <label for="floatingSelect">¿Haz tenido dolor abdominal?</label>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="respuesta_diarrea"
+                                            aria-label="Floating label select example">
+                                            <option selected disabled value="">Elige una opción</option>
+                                            <option value="Si">Si</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        <label for="floatingSelect">¿Haz tenido diarrea?</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="respuesta_acidez"
+                                            aria-label="Floating label select example">
+                                            <option selected disabled value="">Elige una opción</option>
+                                            <option value="Si">Si</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        <label for="floatingSelect">¿Haz tenido acidez?</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="respuesta_estrenimiento"
+                                        aria-label="Floating label select example">
+                                        <option selected disabled value="">Elige una opción</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                    <label for="floatingSelect">¿Haz tenido estreñimiento?</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <a id="boton_prueba" class="btn btn-primary">Realizar prueba</a>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <a id="boton_resultados" class="btn btn-primary">Mostrar resultados</a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <a id="boton_limpiar" class="btn btn-primary">Limpiar campos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="buscar_id" placeholder="Password">
+                                        <label for="floatingInput">Digita tu identificacion</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <a id="boton_resultados" class="btn btn-primary">Mostrar resultados</a>
+                                    </div>
+                                </div>
+                            </div>
+                        -->
+                        </div>
+                    </form>
+                </div>
+
+                <div id="resultados_finales" class="resultados">
+                    <h1>resultados</h1>
+                    <p id="parrafo_resultados"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="/js/sbr.js"> </script>
+
+</body>
+
+</html>

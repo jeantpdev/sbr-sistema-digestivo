@@ -1,0 +1,90 @@
+:root {
+    --BGCOLOR: rgb(29, 30, 32);
+    --COLOR_BLACK: rgb(29, 30, 32);
+    /* morado  color: #6C63FF*/
+}
+
+.page{
+    display: grid;
+    grid-template-areas: 
+    "menu menu"
+    "informacion formulario";
+    grid-template-columns: 0.5fr auto;
+    grid-template-rows:auto 1fr;
+    text-align: center;
+}
+
+.page__information{
+    text-align: start;
+    background-color: aquamarine;
+    grid-area: informacion;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 15px;
+    margin: 15px;
+    height: 80vh;
+}
+
+.page__process-content{
+    grid-template-areas: 
+    "formulario"
+    "resultados";
+}
+
+.page__process{
+    display: grid;
+    grid-area: formulario;
+    align-items: center;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+/* menu */
+
+.menu__contenido {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    height: 10vh;
+    align-items: center;
+    background-color: var(--BGCOLOR);
+}
+
+.menu__contenido-item {
+    padding-left: 15px;
+    text-align: center;
+}
+
+.menu__contenido-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0px 10px 5px 10px;
+}
+
+.menu__contenido-item a:hover {
+    color: antiquewhite;
+}
+
+.page__information-h1, .page__information-h3{ 
+    text-align: center;
+}
+
+.page__information-p, .page__information-list_item{
+    letter-spacing: 1px;
+}
+
+.formulario{
+    padding: 10px 40px 10px 40px;
+}
+
+
+
+
+
+

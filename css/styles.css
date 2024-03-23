@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+@import url(normalize.css);
+
+:root {
+    --BGCOLOR: rgb(29, 30, 32);;
+    --COLOR_BLACK: #131417;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 50px;
+}
+
+/* menu */
+
+.menu__contenido {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 10vh;
+    align-items: center;
+    background-color: var(--COLOR_BLACK);
+}
+
+.menu__contenido-item {
+    padding-left: 15px;
+    text-align: center;
+}
+
+.menu__contenido-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 10px 5px 10px;
+}
+
+.menu__contenido-item a:hover {
+    /* border-bottom: 2px solid #000; */
+    border-bottom: 2px solid white;
+}
+
+/* homePage */
+
+.homePage__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: var(--BGCOLOR);
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.homePage__content-text {
+    display: grid;
+    grid-area: text;
+    text-align: center;
+    margin: auto 0;
+    justify-items: center;
+}
+
+.homePage__content-text-title {
+    font-size: 70px;
+    justify-content: center;
+    color: white;
+}
+
+.homePage__content-description {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+
+.homePage__content-text-description {
+    font-size: 1.1vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+
+}
+
+.homePage__content-img {
+    display: grid;
+    grid-area: img;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.img-index {
+    width: 80%;
+    height: auto;
+}
+
+.wave{
+    display: flex;
+}
+
+.ola {
+    height: 15vh;
+    width: 100%;
+}
+
+/* guide */
+
+.guide {
+    background-color: white;
+    padding: 0 10vw;
+}
+
+.guide__titulo {
+    color: #16161D;
+    font-size: 3vw;
+}
+
+.tarjetas {
+    display: grid;
+    justify-items: center;
+    row-gap: 5vh;
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "description description"
+        "image image";
+    align-items: center;
+    justify-items: start;
+}
+
+.tarjeta-titulo {
+    display: grid;
+    grid-area: title;
+    font-size: 1.2vw;
+}
+
+.tarjeta__titulo {
+    color: #16161D;
+}
+
+.tarjeta-descripcion {
+    display: grid;
+    grid-area: description;
+    text-align: start;
+    justify-content: center;
+    font-size: 1.1vw;
+}
+
+.tarjeta__descripcion {
+    color: #16161D;
+}
+
+.tarjeta-imagen {
+    display: grid;
+    grid-area: image;
+}
+
+.tarjeta__imagen {
+    width: 100%;
+    height: auto;
+}
+
+/* apps */
+.apps__contenido {
+    text-align: center;
+    background-color: white;
+}
+
+.apps__contenido-aplicaciones {
+    display: grid;
+    justify-content: center;
+}
+
+.apps__contenido-aplicaciones-1 {
+    grid-area: aplicacion1;
+}
+
+.apps__contenido-aplicaciones-2 {
+    grid-area: aplicacion2;
+}
+
+.apps__contenido-titulo {
+    grid-area: titulo;
+}
+
+.apps__contenido-h1 {
+    font-size: 70px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--COLOR_BLACK);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 450px;
+    width: 850px;
+}
+
+.card-title {
+    padding: 0px 30px 0px 30px;
+    font-size: 3vh;
+}
+
+.card-title h3{
+    color: white;
+}
+
+.card-description {
+    padding: 0px 30px 0px 30px;
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.card-description p{
+    color: white;
+    font-size: 20px;
+
+}
+
+/* CSS */
+.button-link {
+    background-color: white;
+    border-radius: 6px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 20px;
+    text-align: center;
+}
+
+.button-link a {
+    text-decoration: none;
+    color: var(--COLOR_BLACK);
+
+}
+
+.footer {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--BGCOLOR);
+}
+
+.footer__contenido {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.footer__contenido-otras_redes a i{
+    color: white;
+}
+
+.footer__contenido-creador p{
+    color: white;
+}
+
+
+.link {
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        display: grid;
+        grid-template-rows: 0.1fr 0.5fr 1fr 0.7fr 0.2fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .menu__contenido-item a {
+        font-size: 5vw;
+        letter-spacing: 1px;
+        padding: 0px 10px 5px 10px;
+    }
+
+    .homePage__content-text-title {
+        font-size: 13vw;
+        justify-content: center;
+    }
+
+    .homePage__content-description {
+        padding: 0 5vw;
+    }
+
+    .homePage__content-text-description {
+        font-size: 4.5vw;
+    }
+
+    .ola {
+        height: 15vh;
+        width: 100%;
+    }
+
+    .guide {
+        padding: 10vw;
+    }
+
+    .guide__titulo {
+        font-size: 10vw;
+    }
+
+    .tarjetas {
+        display: grid;
+        row-gap: 5vh;
+    }
+
+    .tarjeta {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "description description"
+            "image image";
+        width: auto;
+        align-items: center;
+        justify-items: start;
+        row-gap: 2vh;
+    }
+
+    .tarjeta-titulo {
+        display: grid;
+        grid-area: title;
+    }
+
+    .tarjeta__titulo {
+        font-size: 6vw;
+        color: #16161D;
+    }
+
+    .tarjeta-descripcion {
+        text-align: justify;
+        font-size: 5vw;
+    }
+
+    .tarjeta__descripcion {
+        color: #16161D;
+    }
+
+    .tarjeta__imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .apps__contenido-h1 {
+        font-size: 10vw;
+    }
+
+    .card {
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .titulo-test{
+        font-size: 5vw;
+    }
+
+    .descripcion-test{
+        font-size: 4vw;
+    }
+
+    .button-link {
+        font-size: 4vw;
+        height: 4vh;
+        width: 25vh;
+    }
+
+
+    .footer {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .footer__contenido {
+        display: grid;
+        grid-template-areas:
+            "redes"
+            "direccion"
+            "otras"
+            "creador";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 3vh;
+    }
+
+}
