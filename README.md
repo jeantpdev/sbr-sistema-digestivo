@@ -1,2 +1,2 @@
 # Necesario...
-Es necesario usar la API local del siguiente repositorio: [link al repositorio](https://github.com/zacksPerez43/sbr-flask_api)
+Es necesario usar la API local del siguiente repositorio: [link al repositorio](https://github.com/jeantpdev/api-sbr-sistema-digestivo)
